@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 # Function to fetch movie details from OMDB API
 def get_movie_details_from_omdb(movie_name):
-    api_key = "44ac3131"
+    api_key = "44ac3131" #OMDB API KEY got it from OMDB
     url = f"http://www.omdbapi.com/?t={movie_name}&apikey={api_key}"
     response = requests.get(url)
     return response.json()
